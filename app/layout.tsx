@@ -3,7 +3,7 @@ import './globals.css'
 import DotGrid from './components/DotGrid'
 
 export const metadata: Metadata = {
-  title: 'Data Services Annual Report 2024-2025',
+  title: 'Data Services Annual Report 2025-2026',
   description: 'University of Rochester Libraries - Data Services Team Annual Report',
   robots: 'noindex, nofollow',
   icons: {
