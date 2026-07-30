@@ -1,6 +1,13 @@
 {
   "team_members": [
     {
+      "name": "Rachel Becker",
+      "title": "Senior Librarian, Health Science",
+      "bird": "Black-capped Chickadee",
+      "description": "Health Sciences Librarian helping further support the needs of researchers at the medical center.",
+      "traits": "Collects knowledge for dispersal and (usually) remembers where it went."
+    },
+    {
       "name": "Heather Owen",
       "title": "Data Librarian",
       "bird": "Great Gray Owl",
@@ -30,59 +37,69 @@
     }
   ],
   "workshops": {
-    "data_skills": {
-      "registered": 240,
-      "attended": 155,
-      "rating": 8.7,
-      "events": 5
+    "data_bloom": {
+      "registered": 487,
+      "attended": 228,
+      "rating": 9.3,
+      "events": 11
     },
     "love_data": {
-      "registered": 468,
-      "attended": 240,
-      "rating": 8.4,
-      "events": 12
+      "registered": 255,
+      "attended": 172,
+      "rating": 8.7,
+      "events": 8
+    },
+    "data_skills": {
+      "registered": 304,
+      "attended": 164,
+      "rating": 8.8,
+      "events": 5
     }
   },
   "engagement": {
-    "total": 315,
-    "busiest_month": "April 2025",
-    "busiest_count": 46,
-    "top_topic": "Data visualization",
-    "top_topic_count": 45,
+    "total": 350,
+    "busiest_month": "April 2026",
+    "busiest_count": 51,
+    "top_topic": "Data Workshop",
+    "top_topic_count": 50,
     "top_funder": "NIH",
-    "top_funder_count": 36,
+    "top_funder_count": 44,
     "by_campus": [
-      { "name": "River Campus", "count": 144, "color": "#FFD82B", "percentage": 45.7 },
-      { "name": "Medical Center", "count": 91, "color": "#FF6B9D", "percentage": 28.9 },
-      { "name": "Public Community", "count": 37, "color": "#4ECDC4", "percentage": 11.7 },
-      { "name": "UR Other", "count": 21, "color": "#95E1D3", "percentage": 6.7 },
-      { "name": "Other", "count": 18, "color": "#FFC200", "percentage": 5.7 },
-      { "name": "Eastman", "count": 4, "color": "#B7D3FF", "percentage": 1.3 }
+      { "name": "River Campus", "count": 178, "color": "#FFD82B", "percentage": 50.9  },
+      { "name": "Medical Center", "count": 118, "color": "#FF6B9D", "percentage": 33.7 },
+      { "name": "Public Community", "count": 30, "color": "#4ECDC4", "percentage": 8.5 },
+      { "name": "Other", "count": 14, "color": "#95E1D3", "percentage": 4 },
+      { "name": "UR Other", "count": 8, "color": "#BEBEBE", "percentage": 2.3 },
+      { "name": "Eastman", "count": 2, "color": "#B7D3FF", "percentage": 0.6 }
     ],
     "by_user_type": [
-      { "type": "Staff", "count": 111, "color": "#8B4513", "percentage": 35.2 },
-      { "type": "Faculty/Researcher", "count": 96, "color": "#A9A9A9", "percentage": 30.5 },
-      { "type": "Community Member", "count": 34, "color": "#FF8C42", "percentage": 10.8 },
-      { "type": "PhD", "count": 29, "color": "#90EE90", "percentage": 9.2 },
-      { "type": "Undergrad", "count": 23, "color": "#D2691E", "percentage": 7.3 },
-      { "type": "Grad-Master's", "count": 17, "color": "#FFD700", "percentage": 5.4 },
-      { "type": "Postdoctoral", "count": 3, "color": "#98FB98", "percentage": 1.0 },
-      { "type": "Alumni", "count": 1, "color": "#696969", "percentage": 0.3 },
-      { "type": "Other", "count": 1, "color": "#FFFF00", "percentage": 0.3 }
+      { "type": "Faculty/Researcher", "count": 139, "color": "#8B4513", "percentage": 39.7 },
+      { "type": "Staff", "count": 91, "color": "#A9A9A9", "percentage": 26 },
+      { "type": "Grad", "count": 55, "color": "#FF8C42", "percentage": 15.7 },
+      { "type": "Community", "count": 33, "color": "#90EE90", "percentage": 9.4 },
+      { "type": "Undergrad", "count": 27, "color": "#D2691E", "percentage": 7.7 },
+      { "type": "Postdoctoral", "count": 2, "color": "#98FB98", "percentage": 0.5 },
+      { "type": "Other", "count": 2, "color": "#696969", "percentage": 0.5 },
+      { "type": "Alumni", "count": 1, "color": "#FFFF00", "percentage": 0.3 }
     ],
     "by_topic": [
-      { "topic": "Data visualization", "count": 45 },
-      { "topic": "DMSP review", "count": 38 },
-      { "topic": "URRR deposits", "count": 32 },
-      { "topic": "Reproducibility", "count": 28 },
-      { "topic": "Data cleaning", "count": 24 }
+      { "topic": "Data workshop/service", "count": 50 },
+      { "topic": "Data curation", "count": 40 },
+      { "topic": "URRR", "count": 28 },
+      { "topic": "General", "count": 24 },
+      { "topic": "DMSP Review", "count": 22 },
+      { "topic": "Reproducibility", "count": 18 },
+      { "topic": "Finding/ Accessing Data", "count": 18 },
+      { "topic": "LabArchives", "count": 16  },
+      { "topic": "Data viz", "count": 16 },
+      { "topic": "protocols.io", "count": 15 }
     ]
   },
   "urrr": {
-    "deposits": 643,
+    "deposits": 528,
     "depositors": 58,
-    "views": 58709,
-    "downloads": 21865,
+    "views": 11906,
+    "downloads": 55196,
     "most_viewed_type": "Datasets",
     "most_viewed_count": 20689,
     "views_by_type": [
