@@ -80,7 +80,7 @@ export default function URRR() {
     >
       <div className="max-w-6xl mx-auto w-full" style={{ position: 'relative', zIndex: 60 }}>
         <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
-          URRR Repository
+          URRR
         </h2>
         
         <p className="text-center text-lg mb-16 max-w-3xl mx-auto" style={{ color: '#B7D3FF' }}>

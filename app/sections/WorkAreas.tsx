@@ -17,19 +17,19 @@ const services = [
   {
     icon: Database,
     title: 'Data Management Practices',
-    description: 'Advise on data, image, code, and file management. Assist with documentation and naming conventions.',
+    description: 'Advise on data, image, code, and file management. Assist with documentation and file naming conventions.',
     color: '#FFC200',
   },
   {
     icon: RefreshCw,
     title: 'Reproducibility',
-    description: 'Best practices for creating/sharing code, GitHub workflows, and statistical methods.',
+    description: 'Best practices for creating/sharing code, GitHub workflows, and statistical methods. Advise on persistent identifiers.',
     color: '#FFE95F',
   },
   {
     icon: BookOpen,
     title: 'Data Curation & Repositories',
-    description: 'Support researchers depositing data into URRR and finding appropriate repositories.',
+    description: 'Support researchers with depositing data into URRR and finding appropriate repositories.',
     color: '#B7D3FF',
   },
   {
@@ -41,7 +41,7 @@ const services = [
   {
     icon: Wrench,
     title: 'Data Tools',
-    description: 'Assist with LabArchives, OSF, protocols.io, DMPTool, ICPSR, and BioRender.',
+    description: 'Assist with LabArchives, OSF, protocols.io, DMPTool, ICPSR, BioRender, and Dedoose.',
     color: '#FFD82B',
   },
 ]

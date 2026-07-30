@@ -57,13 +57,13 @@ export default function Hero() {
             fontWeight: 300
           }}
         >
-          [ 2024—2025 ]
+           2025—2026 
         </div>
       </div>
 
       <div className="absolute bottom-20 text-center" style={{ zIndex: 60 }}>
         <p className="text-lg mb-2" style={{ color: '#E8E8E8' }}>University of Rochester Libraries</p>
-        <p className="text-sm mb-8" style={{ color: '#BEBEBE' }}>Data Services Team</p>
+        <p className="text-lg mb-8" style={{ color: '#E8E8E8' }}>Data Services Team</p>
         
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <span className="text-sm" style={{ color: '#BEBEBE' }}>Scroll to explore</span>

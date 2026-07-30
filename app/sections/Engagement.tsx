@@ -22,9 +22,9 @@ export default function Engagement() {
           
           let count = 0
           const interval = setInterval(() => {
-            count += 5
-            if (count >= 315) {
-              setTotalCount(315)
+            count += 25
+            if (count >= 350) {
+              setTotalCount(350)
               clearInterval(interval)
             } else {
               setTotalCount(count)
@@ -163,27 +163,27 @@ export default function Engagement() {
             </h3>
 
             <div className="h-64 relative">
-              <div className="flex gap-2 mb-2" style={{ height: '45%' }}>
+              <div className="flex gap-2 mb-2" style={{ height: '39.7%' }}>
                 <div 
                   className="rounded flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{
                     backgroundColor: '#FFD82B',
-                    width: '55%'
+                    width: '65%'
                   }}
                 >
-                  <div className="text-black font-bold text-2xl">111</div>
-                  <div className="text-black text-xs font-semibold">Staff</div>
+                  <div className="text-black font-bold text-2xl">139</div>
+                  <div className="text-black text-xs font-semibold">Faculty/Researcher</div>
                 </div>
 
                 <div 
                   className="rounded flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{
                     backgroundColor: '#FFC200',
-                    width: '45%'
+                    width: '35%'
                   }}
                 >
-                  <div className="text-black font-bold text-xl">96</div>
-                  <div className="text-black text-xs font-semibold text-center px-1">Faculty/Researcher</div>
+                  <div className="text-black font-bold text-xl">91</div>
+                  <div className="text-black text-xs font-semibold text-center px-1">Staff</div>
                 </div>
               </div>
 
@@ -195,29 +195,29 @@ export default function Engagement() {
                     width: '30%'
                   }}
                 >
-                  <div className="text-black font-bold text-lg">34</div>
-                  <div className="text-black text-xs text-center px-1">Community</div>
+                  <div className="text-black font-bold text-lg">55</div>
+                  <div className="text-black text-xs text-center px-1">Grad</div>
                 </div>
 
                 <div 
                   className="rounded flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{
                     backgroundColor: '#B7D3FF',
-                    width: '26%'
+                    width: '24%'
                   }}
                 >
-                  <div className="text-black font-bold text-lg">29</div>
-                  <div className="text-black text-xs font-semibold">PhD</div>
+                  <div className="text-black font-bold text-lg">33</div>
+                  <div className="text-black text-xs font-semibold">Community</div>
                 </div>
 
                 <div 
                   className="rounded flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{
                     backgroundColor: '#66A2FF',
-                    width: '22%'
+                    width: '20%'
                   }}
                 >
-                  <div className="text-white font-bold text-lg">23</div>
+                  <div className="text-white font-bold text-lg">27</div>
                   <div className="text-white text-xs text-center px-1">Undergrad</div>
                 </div>
 
@@ -225,7 +225,7 @@ export default function Engagement() {
                   className="rounded flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{
                     backgroundColor: '#003EFF',
-                    width: '22%'
+                    width: '11%'
                   }}
                 >
                   <div className="text-white font-bold">17</div>
@@ -241,8 +241,8 @@ export default function Engagement() {
                     width: '15%'
                   }}
                 >
-                  <div className="text-white font-bold">3</div>
-                  <div className="text-white text-xs text-center">Post</div>
+                  <div className="text-white font-bold">2</div>
+                  <div className="text-white text-xs text-center">Postdoc</div>
                 </div>
 
                 <div 
@@ -292,7 +292,7 @@ export default function Engagement() {
                     <div 
                       className="transition-all duration-1000"
                       style={{
-                        width: hasAnimated ? `${(item.count / 45) * 100}%` : '0%',
+                        width: hasAnimated ? `${(item.count / 50) * 100}%` : '0%',
                         height: '100%',
                         background: 'linear-gradient(90deg, #FFD82B, #FFC200)',
                         borderRadius: '3px'

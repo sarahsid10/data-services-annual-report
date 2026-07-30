@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Quote } from 'lucide-react'
 import data from '../utils/data.json'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -127,37 +128,37 @@ export default function Workshops() {
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Workshops & Webinars</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div 
-            className="workshop-card rounded-2xl p-8"
+            className="workshop-card rounded-3xl p-8"
             style={{
               backgroundColor: 'rgba(255, 216, 43, 0.05)',
               border: '2px solid rgba(255, 216, 43, 0.2)'
             }}
           >
             <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
-              Data Skills Workshop Series
+              Data Bloom 2025
             </h3>
             
             <div className="space-y-6">
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
                 <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  {counts1.reg}
+                  487
                 </div>
               </div>
               
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
                 <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
-                  {counts1.att}
+                  228
                 </div>
               </div>
               
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
                 <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
-                  {data.workshops.data_skills.rating}
+                  9.3
                   <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
                 </div>
               </div>
@@ -165,42 +166,84 @@ export default function Workshops() {
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
                 <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  {counts1.events}
+                  11
+                </div>
+              </div>
+            </div>
+          </div>
+          <div 
+            className="workshop-card rounded-3xl p-8"
+            style={{
+              backgroundColor: 'rgba(255, 216, 43, 0.05)',
+              border: '2px solid rgba(255, 216, 43, 0.2)'
+            }}
+          >
+            <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
+              Love Data 2026
+            </h3>
+            
+            <div className="space-y-6">
+              <div>
+                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
+                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
+                  255
+                </div>
+              </div>
+              
+              <div>
+                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
+                <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
+                  172
+                </div>
+              </div>
+              
+              <div>
+                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
+                <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
+                  8.7
+                  <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
+                </div>
+              </div>
+
+              <div>
+                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
+                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
+                  8
                 </div>
               </div>
             </div>
           </div>
 
           <div 
-            className="workshop-card rounded-2xl p-8"
+            className="workshop-card rounded-3xl p-8"
             style={{
               backgroundColor: 'rgba(255, 216, 43, 0.05)',
               border: '2px solid rgba(255, 216, 43, 0.2)'
             }}
           >
             <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
-              Love Data Month
+              Data Skills 2026
             </h3>
             
             <div className="space-y-6">
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
                 <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  {counts2.reg}
+                  304
                 </div>
               </div>
               
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
                 <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
-                  {counts2.att}
+                  164
                 </div>
               </div>
               
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
                 <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
-                  {data.workshops.love_data.rating}
+                  8.8
                   <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
                 </div>
               </div>
@@ -208,7 +251,7 @@ export default function Workshops() {
               <div>
                 <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
                 <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  {counts2.events}
+                  5
                 </div>
               </div>
             </div>
@@ -222,20 +265,21 @@ export default function Workshops() {
             border: '2px solid rgba(255, 216, 43, 0.2)'
           }}
         >
+
           <h3 className="text-xl font-bold mb-8 text-center" style={{ color: '#FFD82B' }}>
             Registration vs Attendance
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h4 className="text-lg font-semibold mb-4 text-center" style={{ color: '#FFC200' }}>
-                Data Skills Workshop Series
+                Data Bloom
               </h4>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-1">
                     <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
-                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>240</span>
+                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>487</span>
                   </div>
                   <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
                     <div 
@@ -247,7 +291,7 @@ export default function Workshops() {
                         borderRadius: '4px'
                       }}
                     >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>240</span>
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>487</span>
                     </div>
                   </div>
                 </div>
@@ -255,19 +299,19 @@ export default function Workshops() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
-                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>155</span>
+                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>228</span>
                   </div>
                   <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
                     <div 
                       className="transition-all duration-1000 flex items-center justify-end pr-2"
                       style={{
-                        width: animated ? `${(155/240) * 100}%` : '0%',
+                        width: animated ? `${(228/487) * 100}%` : '0%',
                         height: '100%',
                         background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
                         borderRadius: '4px'
                       }}
                     >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>155</span>
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>228</span>
                     </div>
                   </div>
                 </div>
@@ -276,23 +320,29 @@ export default function Workshops() {
               <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
                 <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
                 <ul className="text-xs space-y-1" style={{ color: '#E8E8E8' }}>
+                  <li>• Accessible and Appealing Visualizations</li>
+                  <li>• Build Your Personal Website with Quarto</li>
+                  <li>• Cleaning, Spreadsheet Design & Functions in Excel</li>
+                  <li>• Composing Stories with Data and Viz in Tableau</li>
+                  <li>• PivotTables, PivotCharts, and Dashboards in Excel</li>
+                  <li>• Data Visualization with R</li>
+                  <li>• Git Good with Data - GitHub for Version Control </li>
+                  <li>• In 3D - XR for Data Visualization</li>
+                  <li>• Mapping on GIS Day</li>
                   <li>• Visualize with Python</li>
-                  <li>• Reproducible Code & Workflows</li>
-                  <li>• Cleaning Data with OpenRefine</li>
-                  <li>• Excel Efficiency</li>
-                  <li>• Sharing Research with URRR</li>
+                  <li>• Visualizing Data with Special Collections</li>
                 </ul>
               </div>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4 text-center" style={{ color: '#FFC200' }}>
-                Love Data Month
+                Love Data
               </h4>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-1">
                     <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
-                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>468</span>
+                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>255</span>
                   </div>
                   <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
                     <div 
@@ -304,7 +354,7 @@ export default function Workshops() {
                         borderRadius: '4px'
                       }}
                     >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>468</span>
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>255</span>
                     </div>
                   </div>
                 </div>
@@ -312,36 +362,121 @@ export default function Workshops() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
-                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>240</span>
+                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>172</span>
                   </div>
                   <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
                     <div 
                       className="transition-all duration-1000 flex items-center justify-end pr-2"
                       style={{
-                        width: animated ? `${(240/468) * 100}%` : '0%',
+                        width: animated ? `${(172/255) * 100}%` : '0%',
                         height: '100%',
                         background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
                         borderRadius: '4px'
                       }}
                     >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>240</span>
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>172</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
-                <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Sample Topics:</div>
+                <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
                 <ul className="text-xs space-y-1" style={{ color: '#E8E8E8' }}>
-                  <li>• Metadata & Documentation</li>
-                  <li>• ORCID Advantage</li>
-                  <li>• XR for Data Visualization</li>
-                  <li>• Ethics & Governance</li>
-                  <li>• Git Good with Data</li>
+                  <li>• Beyond the Article</li>
+                  <li>• Bloom Your Scholarly Profile with ORCID</li>
+                  <li>• Doing Text Analysis with Python</li>
+                  <li>• In 3D - XR for Data Visualization</li>
+                  <li>• Metadata and Documentation</li>
+                  <li>• Python Essentials</li>
+                  <li>• Transatlantic Anti-Slavery Wiki Edit-a-thon</li>
                 </ul>
               </div>
             </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4 text-center" style={{ color: '#FFC200' }}>
+                Data Skills 
+              </h4>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
+                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>304</span>
+                  </div>
+                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
+                    <div 
+                      className="transition-all duration-1000 flex items-center justify-end pr-2"
+                      style={{
+                        width: animated ? '100%' : '0%',
+                        height: '100%',
+                        background: 'linear-gradient(90deg, #FFD82B, #FFC200)',
+                        borderRadius: '4px'
+                      }}
+                    >
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>304</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
+                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>164</span>
+                  </div>
+                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
+                    <div 
+                      className="transition-all duration-1000 flex items-center justify-end pr-2"
+                      style={{
+                        width: animated ? `${(164/304) * 100}%` : '0%',
+                        height: '100%',
+                        background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
+                        borderRadius: '4px'
+                      }}
+                    >
+                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>164</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
+                <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
+                <ul className="text-xs space-y-1" style={{ color: '#E8E8E8' }}>
+                  <li>• Git Good with Data - GitHub for Version Control</li>
+                  <li>• Cleaning Messy Data with OpenRefine</li>
+                  <li>• Excel Efficiency</li>
+                  <li>• Modeling Sea Level Rise with QGIS</li>
+                  <li>• Survey Design</li>
+                </ul>
+              </div>
+
+           </div>
+
           </div>
+ <div className="mt-16 rounded-2xl p-12 text-center"
+          style={{
+            background: 'linear-gradient(135deg, #001E5F, #003EFF)',
+          }}
+        >
+<div className="inline-flex items-center gap-2 mb-4 px-6 py-3 rounded-full"
+            style={{ background: 'rgba(255, 216, 43, 0.15)', border: '2px solid rgba(255, 216, 43, 0.3)' }}
+          >
+            <Quote className="w-8 h-8" style={{ color: '#FFD82B' }} />
+            <span style={{ color: '#FFD82B', fontSize: '1rem', fontWeight: 600, letterSpacing: '0.1em' }}>
+              ATTENDEE FEEDBACK
+            </span>
+          </div>
+
+
+          <p className="text-sm mb-3" style={{ color: '#E8E8E8' }}>
+           <b> Accessible and Appealing Visualizations: </b> <br /> "I am an alumni who works in data and analytics and this was a great refresher on the basics and complexities of creating good reporting. <br />I wish a course like this had existed at the beginning of my career." 
+	</p>
+	<br /> 
+	<p className="text-sm mb-3" style={{ color: '#E8E8E8' }}>
+<b> Creating Accessible PivotTables, PivotCharts, and Dashboards in Excel: </b> <br /> “Heather Owens, was patient, and overall did a good job!”
+          </p>
+        </div>
+
         </div>
       </div>
     </section>

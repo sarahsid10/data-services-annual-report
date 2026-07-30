@@ -17,7 +17,7 @@ const initiatives = [
   {
     icon: GraduationCap,
     title: 'Student Opportunities',
-    description: 'Expanding student employment and internships focused on data support projects.',
+    description: 'Continued support for student employment and internships focused on data support projects.',
     color: '#FFC200',
   },
   {
@@ -25,19 +25,7 @@ const initiatives = [
     title: 'Environmental Scan',
     description: 'Comprehensive library-wide scan of uncataloged or hidden data collections.',
     color: '#FFE95F',
-  },
-  {
-    icon: Building2,
-    title: 'Carlson Research Commons',
-    description: 'New space redesign with StudioX and Digital Scholarship for increased visibility.',
-    color: '#FFD82B',
-  },
-  {
-    icon: Handshake,
-    title: 'Research Support Referral',
-    description: 'Centralized on-demand support system connecting researchers across the university.',
-    color: '#FFC200',
-  },
+  }
 ]
 
 export default function Future() {
@@ -70,7 +58,7 @@ export default function Future() {
     >
       <div className="max-w-6xl mx-auto w-full">
         <div style={{ color: '#FFC200', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-          Part [05]
+          Part [06]
         </div>
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>The Future</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
@@ -124,7 +112,7 @@ export default function Future() {
             "Data Services is excited for the next year and beyond and is proud of all it has accomplished."
           </p>
           <p className="text-xl font-semibold" style={{ color: '#FFC200' }}>
-            — Matthew, Heather, Sarah, and Daniel
+            — Rachel, Matthew, Heather, Sarah, and Daniel
           </p>
         </div>
       </div>

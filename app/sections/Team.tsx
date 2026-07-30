@@ -9,6 +9,24 @@ gsap.registerPlugin(ScrollTrigger)
 
 const teamMembers = [
   {
+    name: 'Rachel Becker',
+    title: 'Senior Librarian, Health Sciences',
+    initials: 'RB',
+    spiritAnimal: 'Black-capped Chickadee',
+    description: 'Health Sciences Librarian helping further support the needs of researchers at the medical center.',
+    trait: 'Collects knowledge for dispersal and (usually) remembers where it went.',
+    birdImage: '/images/Rachel_chickadee.jpg',
+  },
+  {
+    name: 'Matthew Mariner',
+    title: 'Data Curator Librarian',
+    initials: 'MM',
+    spiritAnimal: 'Anhinga',
+    description: 'Data Curator Librarian managing URRR, ensuring thorough curation of all submitted data.',
+    trait: 'Rather awkward on land, but flies gracefully through water',
+    birdImage: '/images/anhinga.jpg',
+  },
+  {
     name: 'Heather Owen',
     title: 'Data Librarian',
     initials: 'HO',
@@ -26,15 +44,7 @@ const teamMembers = [
     trait: 'Compact, judicious, and level-headed',
     birdImage: '/images/merlin.jpg',
   },
-  {
-    name: 'Matthew Mariner',
-    title: 'Data Curator Librarian',
-    initials: 'MM',
-    spiritAnimal: 'Anhinga',
-    description: 'Data Curator Librarian managing URRR, ensuring thorough curation of all submitted data.',
-    trait: 'Rather awkward on land, but flies gracefully through water',
-    birdImage: '/images/anhinga.jpg',
-  },
+
   {
     name: 'Daniel Castillo',
     title: 'Somerville Director',
@@ -175,7 +185,7 @@ export default function Team() {
                 </div>
 
                 <p className="text-xs mb-2" style={{ color: '#B7D3FF' }}>
-                  <span className="font-semibold">Spirit Animal:</span> {member.spiritAnimal}
+                  <span className="font-semibold">Bird Archetype:</span> {member.spiritAnimal}
                 </p>
                 <p className="text-sm mb-3" style={{ color: '#E8E8E8' }}>
                   {member.description}

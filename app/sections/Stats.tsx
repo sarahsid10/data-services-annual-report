@@ -21,9 +21,9 @@ export default function Stats() {
           
           let count1 = 0
           const timer1 = setInterval(() => {
-            count1 += 5
-            if (count1 >= 315) {
-              setCounts(prev => [315, prev[1], prev[2]])
+            count1 += 15
+            if (count1 >= 350) {
+              setCounts(prev => [350, prev[1], prev[2]])
               clearInterval(timer1)
             } else {
               setCounts(prev => [count1, prev[1], prev[2]])
@@ -32,9 +32,9 @@ export default function Stats() {
 
           let count2 = 0
           const timer2 = setInterval(() => {
-            count2 += 12
-            if (count2 >= 708) {
-              setCounts(prev => [prev[0], 708, prev[2]])
+            count2 += 40
+            if (count2 >= 991) {
+              setCounts(prev => [prev[0], 991, prev[2]])
               clearInterval(timer2)
             } else {
               setCounts(prev => [prev[0], count2, prev[2]])
@@ -43,9 +43,9 @@ export default function Stats() {
 
           let count3 = 0
           const timer3 = setInterval(() => {
-            count3 += 11
-            if (count3 >= 643) {
-              setCounts(prev => [prev[0], prev[1], 643])
+            count3 += 20
+            if (count3 >= 528) {
+              setCounts(prev => [prev[0], prev[1], 528])
               clearInterval(timer3)
             } else {
               setCounts(prev => [prev[0], prev[1], count3])
@@ -125,10 +125,10 @@ export default function Stats() {
             }}
           >
             <div className="text-6xl font-black mb-4" style={{ color: '#B7D3FF' }}>
-              58K
+              55K
             </div>
             <div className="text-base font-medium" style={{ color: '#E8E8E8' }}>
-              Repository Views
+              Repository Downloads
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ export default function Introduction() {
           >
             <Sparkles className="w-5 h-5" style={{ color: '#FFD82B' }} />
             <span style={{ color: '#FFD82B', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em' }}>
-              2024-2025 ANNUAL REPORT
+              2025-2026 ANNUAL REPORT
             </span>
           </div>
           <h2 className="font-serif font-bold" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
@@ -97,25 +97,27 @@ export default function Introduction() {
           
           <div className="space-y-6" style={{ color: '#E8E8E8' }}>
             <p className="text-xl font-serif italic text-center" style={{ lineHeight: '1.8', color: '#FFE95F' }}>
-              "This year marked a significant milestone—our first full year together as a complete team."
+              "This year has been an exciting period of growth and collaboration for the Data Services team. I am especially proud of how the team has come together over the past year, embracing new opportunities to support researchers across the University of Rochester and advancing the One University vision."
             </p>
             
             <p className="text-lg text-center" style={{ lineHeight: '1.7' }}>
-              We embraced this opportunity to expand our programming and foster new collaborations across 
-              the University of Rochester. I am especially proud of the contributions of our student employees, 
-              who have expanded their roles by teaching workshops and actively promoting UR Libraries Data Services.
+              A key milestone was welcoming Rachel Becker from the Edward G. Miner Libraries to the team. Rachel’s expertise positions us to better identify and support the needs of researchers at the medical campus, ensuring that our services are aligned with the university’s broader mission. 
             </p>
             
             <p className="text-lg text-center" style={{ lineHeight: '1.7' }}>
-              Through our three signature workshop series, we hosted over 25 workshops and panels, attracting more 
-              than 1,000 registrants. Beyond the direct impact on research, we've cultivated long-term partnerships 
-              with Learning Initiatives, Scholarly Communications, Digital Scholarship, Studio X, CIRC, and RIT—
-              relationships that highlight the valuable services offered by River Campus Libraries.
+              I am also proud of the continued growth of our student employees, who play a vital role in expanding our services and outreach. Tejaswini Balamurugan Kanimozhi, Nayoon (Kate) Kim, and Aabha Pandit have bolstered our programming by teaching workshops and actively promoting the UR Libraries Data Services team. This year, we began expanding experiential learning opportunities for our students by collaborating with colleagues across the library to support data-driven projects. Kate is working on a project to clean, analyze, and visualize data from our interlibrary loan service. These projects enhance internal decision-making at the library and provide our students with valuable experience to prepare them for their future studies and careers.
             </p>
             
+            <p className="text-lg text-center" style={{ lineHeight: '1.7' }}>
+             Our team has strengthened collaborations across the university to amplify our impact. We partnered with the Office of Research and Project Administration (ORPA) to share training opportunities and introduce the NIH Data Management and Sharing template, guiding researchers through data-sharing mandates. Collaborations with Sonya Hadrigan, the inaugural Associate Vice President for Research Integrity, and the Office of Research Integrity, Stewardship & Ethics (ORISE) have advanced initiatives promoting responsible research practices.  
+            </p>
+	    
+            <p className="text-lg text-center" style={{ lineHeight: '1.7' }}>
+             Looking ahead, we are particularly excited to continue expanding our collaborations. We plan to work with the Scholarly Communications department to support ORISE’s Fall 2026 and Spring 2027 Responsible and Ethical Conduct of Research (RECR) training program. Additionally, we will finalize a data management and sharing template for the National Science Foundation, providing valuable guidance for the university’s second-largest research funder after the NIH. Finally, we aim to identify additional technical projects that support the library’s operations while creating experiential learning opportunities for our student colleagues.  
+            </p>
+
             <p className="text-lg text-center font-semibold" style={{ lineHeight: '1.7', color: '#B7D3FF' }}>
-              Looking ahead, we are excited to build on this momentum by developing new collaborations that 
-              empower our students, faculty, and staff to conduct high-quality, innovative research.
+             As we move forward, I am confident that the Data Services team will continue to embody the spirit of Meliora—striving to be ever better in supporting the university’s research community.  
             </p>
           </div>
 
@@ -126,7 +128,7 @@ export default function Introduction() {
               Daniel Castillo
             </p>
             <p style={{ color: '#B7D3FF', fontSize: '1rem' }}>
-              Director, Science & Engineering Libraries and Research Initiatives
+             Somerville Director, Science & Engineering Libraries and Research Initiatives
             </p>
           </div>
         </div>
@@ -146,7 +148,7 @@ export default function Introduction() {
             >
               <BookOpen className="w-8 h-8" style={{ color: '#001E5F' }} />
             </div>
-            <div className="text-5xl font-black mb-3" style={{ color: '#FFD82B' }}>25+</div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFD82B' }}>37</div>
             <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Workshops</div>
             <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
               Love Data Month, Data Skills Series, Data Bloom
@@ -166,7 +168,7 @@ export default function Introduction() {
             >
               <Users className="w-8 h-8" style={{ color: '#001E5F' }} />
             </div>
-            <div className="text-5xl font-black mb-3" style={{ color: '#FFC200' }}>1,000+</div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFC200' }}>991</div>
             <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Participants</div>
             <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
               Students, faculty, and staff engaged
@@ -186,10 +188,10 @@ export default function Introduction() {
             >
               <Heart className="w-8 h-8" style={{ color: '#001E5F' }} />
             </div>
-            <div className="text-5xl font-black mb-3" style={{ color: '#FFE95F' }}>10+</div>
-            <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Partnerships</div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFE95F' }}>9.1</div>
+            <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Rating</div>
             <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
-              Campus-wide collaborations built
+              Average workshop rating by attendees
             </div>
           </div>
         </div>
@@ -204,11 +206,11 @@ export default function Introduction() {
             }}
           >
             <h3 className="text-xl font-bold mb-4" style={{ color: '#FFD82B' }}>
-              Collaborative Partnerships
+              Library Partners
             </h3>
             <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>
-              Built long-term relationships across campus with Learning Initiatives, Scholarly Communications, 
-              Metadata Strategies, Digital Scholarship, Studio X, CIRC, and RIT.
+              Continuing to build on partnerships, library units the team worked with include Digital Scholarship, LI, STEM Librarians, RBSCP, Scholarly Communications, Metadata Services, POA Library, Robbins Library, Studio X, Miner Library, Sibley Library.
+
             </p>
           </div>
 
@@ -220,11 +222,11 @@ export default function Introduction() {
             }}
           >
             <h3 className="text-xl font-bold mb-4" style={{ color: '#FFC200' }}>
-              Student Leadership
+              Beyond the Library
             </h3>
             <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>
-              Our student employees expanded their roles by teaching workshops and actively promoting 
-              UR Libraries Data Services across the university community.
+              Data Services collaborated with University offices such as CIRC (Center for Integrated Research Computing) and ORISE (Office of Research Integrity, Stewarship & Ethics. Beyond the University, the team partnered with the University of Leeds.
+
             </p>
           </div>
         </div>
