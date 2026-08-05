@@ -60,7 +60,7 @@ export default function Hero() {
         >
           Annual
           <br />
-          Report
+          Report <br />
         </h2>
         
 

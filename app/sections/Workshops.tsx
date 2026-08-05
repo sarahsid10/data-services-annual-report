@@ -125,8 +125,13 @@ export default function Workshops() {
 
 
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Workshops & Webinars</h2>
+        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Assessment</h2>
+
+
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
+                <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
+                 <br /> Workshops & Webinars
+                </h2>
               {/* Stats Grid */}
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {/* Card 1 */}

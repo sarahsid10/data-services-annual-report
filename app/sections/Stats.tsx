@@ -66,9 +66,10 @@ export default function Stats() {
     >
       <div className="max-w-6xl mx-auto w-full">
 
-        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>By the Numbers</h2>
+        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>General Stats</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
-
+        
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16">
           <div 
             className="rounded-2xl p-8 text-center"
@@ -130,6 +131,164 @@ export default function Stats() {
             </div>
           </div>
         </div>
+    
+{/* Partnership Network */}
+<div className="mt-24">
+  <h3 className="font-serif font-bold mb-6 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }} >
+    Partnerships
+  </h3>
+      <p className="text-center text-lg" style={{ color: '#B7D3FF' }}>
+        Data Services continued partnerships and built new collaborations with units across the University of Rochester and beyond
+      </p>
+  <div className="relative h-[850px]">
+
+    {/* SVG connector lines */}
+    <svg
+      className="absolute inset-0 w-full h-full"
+      style={{ pointerEvents: "none" }}
+    >
+      {/* Library */}
+      <line x1="44%" y1="45%" x2="27.5%" y2="48%" stroke="#4A90E2" strokeWidth="3"/>
+
+      {/* University */}
+      <line x1="56%" y1="40%" x2="72.5%" y2="25%" stroke="#FFD82B" strokeWidth="3"/>
+
+      {/* External */}
+      <line x1="56%" y1="50%" x2="72.5%" y2="76%" stroke="#66BB6A" strokeWidth="3"/>
+    </svg>
+
+    {/* Center */}
+    <div
+      className="absolute left-1/2 top-[45%] -translate-x-1/2 -translate-y-1/2
+                 w-52 h-52 rounded-full flex items-center justify-center
+                 text-center shadow-2xl"
+      style={{
+        background: "#001E5F",
+        border: "4px solid #FFD82B",
+      }}
+    >
+      <div>
+        <div
+          className="text-2xl font-bold"
+          style={{ color: "#FFD82B" }}
+        >
+          Data
+          <br />
+          Services
+        </div>
+
+        <div
+          className="mt-3 text-sm"
+          style={{ color: "#E8E8E8" }}
+        >
+          14 Partners
+        </div>
+      </div>
+
+    </div>
+
+    {/* Library */}
+    <div className="absolute left-0 top-[48%] -translate-y-1/2 w-80">
+      <div
+        className="rounded-2xl p-6"
+        style={{
+          background: "rgba(74,144,226,.15)",
+          border: "2px solid #4A90E2",
+        }}
+      >
+        <h4
+          className="text-xl font-bold mb-3"
+          style={{ color: "#4A90E2" }}
+        >
+          Libraries
+        </h4>
+
+        <div
+          className="text-6xl font-black"
+          style={{ color: "#FFFFFF" }}
+        >
+          11
+        </div>
+
+        <p
+          className="mt-2"
+          style={{ color: "#E8E8E8" }}
+        >
+          Library-wide partners
+        </p>
+        <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>
+        STEM Librarians, Learning Initiatives, Digital Scholarship, RBSCP, Scholarly Communications, Metadata Services, POA Library, Robbins Library, Studio X, Miner Library, Sibley Library
+        </p>
+      </div>
+    </div>
+
+    {/* University */}
+    <div className="absolute right-0 top-[15%] w-80">
+      <div
+        className="rounded-2xl p-6"
+        style={{
+          background: "rgba(255,216,43,.15)",
+          border: "2px solid #FFD82B",
+        }}
+      >
+        <h4
+          className="text-xl font-bold mb-3"
+          style={{ color: "#FFD82B" }}
+        >
+          University
+        </h4>
+
+        <div
+          className="text-6xl font-black text-white"
+        >
+          2
+        </div>
+
+        <p
+          className="mt-2"
+          style={{ color: "#E8E8E8" }}
+        >
+          University partners
+        </p>
+         <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}> CIRC (Center for Integrated Research Computing) and ORISE (Office of Research Integrity, Stewarship & Ethics)</p>
+      </div>
+    </div>
+
+    {/* External */}
+    <div className="absolute right-0 bottom-[12%] w-80">
+      <div
+        className="rounded-2xl p-6"
+        style={{
+          background: "rgba(102,187,106,.15)",
+          border: "2px solid #66BB6A",
+        }}
+      >
+        <h4
+          className="text-xl font-bold mb-3"
+          style={{ color: "#66BB6A" }}
+        >
+          External
+        </h4>
+
+        <div
+          className="text-6xl font-black text-white"
+        >
+          1
+        </div>
+
+        <p
+          className="mt-2"
+          style={{ color: "#E8E8E8" }}
+        >
+          External partner
+        </p>
+        <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>University of Leeds</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
       </div>
     </section>
   )

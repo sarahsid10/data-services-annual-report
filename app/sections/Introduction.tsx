@@ -127,40 +127,7 @@ export default function Introduction() {
         </div>
 
 
-        {/* Key Achievements */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
-          <div 
-            className="rounded-2xl p-8"
-            style={{
-              background: 'rgba(0, 30, 95, 0.3)',
-              border: '2px solid rgba(255, 216, 43, 0.15)',
-            }}
-          >
-            <h3 className="text-xl font-bold mb-4" style={{ color: '#FFD82B' }}>
-              Library Partners
-            </h3>
-            <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>
-              Continuing to build on partnerships, library units the team worked with include Digital Scholarship, LI, STEM Librarians, RBSCP, Scholarly Communications, Metadata Services, POA Library, Robbins Library, Studio X, Miner Library, Sibley Library.
 
-            </p>
-          </div>
-
-          <div 
-            className="rounded-2xl p-8"
-            style={{
-              background: 'rgba(0, 30, 95, 0.3)',
-              border: '2px solid rgba(255, 194, 0, 0.15)',
-            }}
-          >
-            <h3 className="text-xl font-bold mb-4" style={{ color: '#FFC200' }}>
-              Beyond the Library
-            </h3>
-            <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}>
-              Data Services collaborated with University offices such as CIRC (Center for Integrated Research Computing) and ORISE (Office of Research Integrity, Stewarship & Ethics. Beyond the University, the team partnered with the University of Leeds.
-
-            </p>
-          </div>
-        </div>
 
       </div>
     </section>
