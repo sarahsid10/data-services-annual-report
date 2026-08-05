@@ -47,7 +47,11 @@ export default function Engagement() {
         <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
           Engagement Highlights
         </h2>
-
+        
+        <p className="text-center text-lg mb-16 max-w-3xl mx-auto" style={{ color: '#B7D3FF' }}>
+          Through consultations, instruction, and curation support, Data Services engages with patrons across departments and campuses 
+        </p>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 mb-16">
           <div 
             className="rounded-2xl p-8 text-center"

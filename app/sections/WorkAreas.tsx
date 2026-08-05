@@ -75,9 +75,7 @@ export default function WorkAreas() {
       style={{ backgroundColor: 'rgba(0, 30, 95, 0.2)', position: 'relative', zIndex: 10 }}
     >
       <div className="max-w-6xl mx-auto w-full" style={{ position: 'relative', zIndex: 60 }}>
-        <div style={{ color: '#FFC200', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-          Part [02]
-        </div>
+
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Our Services</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
 

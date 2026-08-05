@@ -36,34 +36,39 @@ export default function Hero() {
           ref={titleRef}
           style={{ 
             fontFamily: 'Georgia, serif',
+            letterSpacing: '-0.009em',
+            fontSize: 'clamp(3rem, 7vw, 6rem)',
+            color: '#FFD82B',
+            lineHeight: 0.85,
+            marginBottom: '3rem',
+            fontWeight: 500
+          }}
+        >
+          Data Services
+        </h1>
+        <h2 
+
+          style={{ 
+            fontFamily: 'Georgia, serif',
             letterSpacing: '-0.02em',
             fontSize: 'clamp(6rem, 15vw, 14rem)',
             color: '#FFD82B',
             lineHeight: 0.85,
             marginBottom: '3rem',
-            fontWeight: 700
+            fontWeight: 500
           }}
         >
           Annual
           <br />
           Report
-        </h1>
+        </h2>
         
-        <div 
-          ref={yearRef}
-          style={{
-            fontSize: 'clamp(2rem, 5vw, 4rem)',
-            color: '#FFC200',
-            fontWeight: 300
-          }}
-        >
-           2025—2026 
-        </div>
+
       </div>
 
       <div className="absolute bottom-20 text-center" style={{ zIndex: 60 }}>
-        <p className="text-lg mb-2" style={{ color: '#E8E8E8' }}>University of Rochester Libraries</p>
-        <p className="text-lg mb-8" style={{ color: '#E8E8E8' }}>Data Services Team</p>
+        <p className="text-lg mb-2" style={{ color: '#FFC200' }}>2025 - 2026</p>
+        <p className="text-lg mb-2" style={{ color: '#E8E8E8' }}>University of Rochester Libraries <br /></p>
         
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <span className="text-sm" style={{ color: '#BEBEBE' }}>Scroll to explore</span>

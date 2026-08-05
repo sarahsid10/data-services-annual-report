@@ -3,13 +3,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Quote } from 'lucide-react'
+import { Quote, Sparkles, Users, TrendingUp, Award, Heart, BookOpen } from 'lucide-react'
 import data from '../utils/data.json'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Workshops() {
   const sectionRef = useRef<HTMLElement>(null)
+  const cardsRef = useRef<HTMLDivElement>(null)
   const [animated, setAnimated] = useState(false)
   const [counts1, setCounts1] = useState({ reg: 0, att: 0, events: 0 })
   const [counts2, setCounts2] = useState({ reg: 0, att: 0, events: 0 })
@@ -121,143 +122,81 @@ export default function Workshops() {
       className="min-h-screen flex items-center py-20 px-6"
       style={{ backgroundColor: '#021BC3', position: 'relative', zIndex: 10 }}
     >
+
+
       <div className="max-w-6xl mx-auto w-full">
-        <div style={{ color: '#FFC200', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-          Part [04]
-        </div>
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Workshops & Webinars</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+              {/* Stats Grid */}
+        <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {/* Card 1 */}
           <div 
-            className="workshop-card rounded-3xl p-8"
+            className="stat-card rounded-3xl p-8"
             style={{
-              backgroundColor: 'rgba(255, 216, 43, 0.05)',
-              border: '2px solid rgba(255, 216, 43, 0.2)'
+              background: 'linear-gradient(135deg, rgba(0, 62, 255, 0.3), rgba(0, 102, 253, 0.1))',
+              border: '2px solid rgba(255, 216, 43, 0.3)',
             }}
           >
-            <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
-              Data Bloom 2025
-            </h3>
-            
-            <div className="space-y-6">
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  487
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
-                <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
-                  228
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
-                <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
-                  9.3
-                  <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
-                </div>
-              </div>
-
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  11
-                </div>
-              </div>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              style={{ background: 'linear-gradient(135deg, #FFD82B, #FFC200)' }}
+            >
+              <BookOpen className="w-8 h-8" style={{ color: '#001E5F' }} />
             </div>
-          </div>
-          <div 
-            className="workshop-card rounded-3xl p-8"
-            style={{
-              backgroundColor: 'rgba(255, 216, 43, 0.05)',
-              border: '2px solid rgba(255, 216, 43, 0.2)'
-            }}
-          >
-            <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
-              Love Data 2026
-            </h3>
-            
-            <div className="space-y-6">
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  255
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
-                <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
-                  172
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
-                <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
-                  8.7
-                  <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
-                </div>
-              </div>
-
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  8
-                </div>
-              </div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFD82B' }}>37</div>
+            <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Workshops</div>
+            <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
+              Data Bloom, Love Data Month, Data Skills
             </div>
           </div>
 
+          {/* Card 2 */}
           <div 
-            className="workshop-card rounded-3xl p-8"
+            className="stat-card rounded-3xl p-8"
             style={{
-              backgroundColor: 'rgba(255, 216, 43, 0.05)',
-              border: '2px solid rgba(255, 216, 43, 0.2)'
+              background: 'linear-gradient(135deg, rgba(0, 102, 253, 0.3), rgba(102, 162, 255, 0.1))',
+              border: '2px solid rgba(255, 194, 0, 0.3)',
             }}
           >
-            <h3 className="text-2xl font-bold mb-8" style={{ color: '#FFD82B' }}>
-              Data Skills 2026
-            </h3>
-            
-            <div className="space-y-6">
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Registered</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  304
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Attended</div>
-                <div className="text-5xl font-black" style={{ color: '#FFC200' }}>
-                  164
-                </div>
-              </div>
-              
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Average Rating</div>
-                <div className="text-5xl font-black" style={{ color: '#FFE95F' }}>
-                  8.8
-                  <span className="text-2xl" style={{ color: '#E8E8E8' }}>/10</span>
-                </div>
-              </div>
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              style={{ background: 'linear-gradient(135deg, #FFC200, #FFE95F)' }}
+            >
+              <Users className="w-8 h-8" style={{ color: '#001E5F' }} />
+            </div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFC200' }}>991</div>
+            <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Participants</div>
+            <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
+              Students, faculty, and staff engaged
+            </div>
+          </div>
 
-              <div>
-                <div className="text-sm mb-2" style={{ color: '#B7D3FF' }}>Total Events</div>
-                <div className="text-5xl font-black" style={{ color: '#FFD82B' }}>
-                  5
-                </div>
-              </div>
+          {/* Card 3 */}
+          <div 
+            className="stat-card rounded-3xl p-8"
+            style={{
+              background: 'linear-gradient(135deg, rgba(102, 162, 255, 0.3), rgba(183, 211, 255, 0.1))',
+              border: '2px solid rgba(255, 233, 95, 0.3)',
+            }}
+          >
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+              style={{ background: 'linear-gradient(135deg, #FFE95F, #B7D3FF)' }}
+            >
+              <Heart className="w-8 h-8" style={{ color: '#001E5F' }} />
+            </div>
+            <div className="text-5xl font-black mb-3" style={{ color: '#FFE95F' }}>9.1</div>
+            <div className="text-lg font-semibold mb-2" style={{ color: '#FFE95F' }}>Rating</div>
+            <div style={{ color: '#B7D3FF', fontSize: '0.9rem' }}>
+              Average workshop rating by attendees
             </div>
           </div>
         </div>
 
+
+	
+	<div className="max-w-6xl mx-auto w-full"> 
+        <p className="text-lg mb-16" style={{ color: '#B7D3FF' }}>
+        <br /> Additional workshops included topics such as Data Management & Sharing Plans, ORCID, LabArchives on-site, protocols.io.
+	</p>
+	</div>
         <div 
           className="mt-12 rounded-2xl p-8"
           style={{
@@ -267,7 +206,7 @@ export default function Workshops() {
         >
 
           <h3 className="text-xl font-bold mb-8 text-center" style={{ color: '#FFD82B' }}>
-            Registration vs Attendance
+            Workshop Series Registration vs Attendance
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -276,46 +215,56 @@ export default function Workshops() {
                 Data Bloom
               </h4>
               <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
-                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>487</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? '100%' : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFD82B, #FFC200)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>487</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
-                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>228</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? `${(228/487) * 100}%` : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>228</span>
-                    </div>
-                  </div>
+              <div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "28px",
+                  background: "linear-gradient(90deg, #FFD82B, #FFC200)",
+                  borderRadius: "6px",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                {/* Attended portion */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: animated ? `${(228 / 487) * 100}%` : "0%",
+                    height: "100%",
+                    background: "rgba(0, 30, 95, 0.45)",
+                    transition: "width 1s ease",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#FFFFFF",
+                    fontWeight: "bold",
+                    fontSize: "0.8rem",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Attended: 228
                 </div>
               </div>
+              
+
+              {/* Registered label below the full bar */}
+              <div
+                className="flex justify-between mt-2"
+                style={{
+                  color: "#B7D3FF",
+                  fontSize: "0.85rem",
+                }}
+              >
+                <span></span>
+                <span>
+                  Registered: <strong style={{ color: "#FFD82B" }}>487</strong>
+                </span>
+              </div>
+            </div>
+            </div>
 
               <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
                 <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
@@ -339,46 +288,56 @@ export default function Workshops() {
                 Love Data
               </h4>
               <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
-                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>255</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? '100%' : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFD82B, #FFC200)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>255</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
-                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>172</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? `${(172/255) * 100}%` : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>172</span>
-                    </div>
-                  </div>
+              <div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "28px",
+                  background: "linear-gradient(90deg, #FFD82B, #FFC200)",
+                  borderRadius: "6px",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                {/* Attended portion */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: animated ? `${(172 / 255) * 100}%` : "0%",
+                    height: "100%",
+                    background: "rgba(0, 30, 95, 0.45)",
+                    transition: "width 1s ease",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#FFFFFF",
+                    fontWeight: "bold",
+                    fontSize: "0.8rem",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Attended: 172
                 </div>
               </div>
+              
+
+              {/* Registered label below the full bar */}
+              <div
+                className="flex justify-between mt-2"
+                style={{
+                  color: "#B7D3FF",
+                  fontSize: "0.85rem",
+                }}
+              >
+                <span></span>
+                <span>
+                  Registered: <strong style={{ color: "#FFD82B" }}>255</strong>
+                </span>
+              </div>
+            </div>
+            </div>
 
               <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
                 <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
@@ -398,46 +357,56 @@ export default function Workshops() {
                 Data Skills 
               </h4>
               <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Registered</span>
-                    <span style={{ color: '#FFD82B', fontWeight: 'bold' }}>304</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? '100%' : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFD82B, #FFC200)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>304</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span style={{ color: '#B7D3FF', fontSize: '0.85rem' }}>Attended</span>
-                    <span style={{ color: '#FFC200', fontWeight: 'bold' }}>164</span>
-                  </div>
-                  <div style={{ width: '100%', height: '24px', backgroundColor: 'rgba(255, 216, 43, 0.1)', borderRadius: '4px' }}>
-                    <div 
-                      className="transition-all duration-1000 flex items-center justify-end pr-2"
-                      style={{
-                        width: animated ? `${(164/304) * 100}%` : '0%',
-                        height: '100%',
-                        background: 'linear-gradient(90deg, #FFC200, #FFE95F)',
-                        borderRadius: '4px'
-                      }}
-                    >
-                      <span style={{ fontSize: '0.75rem', color: '#001E5F', fontWeight: 'bold' }}>164</span>
-                    </div>
-                  </div>
+              <div>
+              <div
+                style={{
+                  width: "100%",
+                  height: "28px",
+                  background: "linear-gradient(90deg, #FFD82B, #FFC200)",
+                  borderRadius: "6px",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                {/* Attended portion */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: animated ? `${(164 / 304) * 100}%` : "0%",
+                    height: "100%",
+                    background: "rgba(0, 30, 95, 0.45)",
+                    transition: "width 1s ease",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#FFFFFF",
+                    fontWeight: "bold",
+                    fontSize: "0.8rem",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  Attended: 164
                 </div>
               </div>
+              
+
+              {/* Registered label below the full bar */}
+              <div
+                className="flex justify-between mt-2"
+                style={{
+                  color: "#B7D3FF",
+                  fontSize: "0.85rem",
+                }}
+              >
+                <span></span>
+                <span>
+                  Registered: <strong style={{ color: "#FFD82B" }}>304</strong>
+                </span>
+              </div>
+            </div>
+            </div>
 
               <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: 'rgba(255, 216, 43, 0.05)' }}>
                 <div className="text-xs mb-2" style={{ color: '#66A2FF' }}>Workshop Topics:</div>
@@ -453,30 +422,73 @@ export default function Workshops() {
            </div>
 
           </div>
- <div className="mt-16 rounded-2xl p-12 text-center"
-          style={{
-            background: 'linear-gradient(135deg, #001E5F, #003EFF)',
-          }}
-        >
-<div className="inline-flex items-center gap-2 mb-4 px-6 py-3 rounded-full"
-            style={{ background: 'rgba(255, 216, 43, 0.15)', border: '2px solid rgba(255, 216, 43, 0.3)' }}
-          >
-            <Quote className="w-8 h-8" style={{ color: '#FFD82B' }} />
-            <span style={{ color: '#FFD82B', fontSize: '1rem', fontWeight: 600, letterSpacing: '0.1em' }}>
-              ATTENDEE FEEDBACK
-            </span>
-          </div>
 
+<div
+  className="mt-16 rounded-2xl p-12"
+  style={{
+    background: "linear-gradient(135deg, #001E5F, #003EFF)",
+  }}
+>
+  <div className="text-center">
+    <div
+      className="inline-flex items-center gap-2 mb-8 px-6 py-3 rounded-full"
+      style={{
+        background: "rgba(255, 216, 43, 0.15)",
+        border: "2px solid rgba(255, 216, 43, 0.3)",
+      }}
+    >
+      <Quote className="w-8 h-8" style={{ color: "#FFD82B" }} />
+      <span
+        style={{
+          color: "#FFD82B",
+          fontSize: "1rem",
+          fontWeight: 600,
+          letterSpacing: "0.1em",
+        }}
+      >
+        ATTENDEE FEEDBACK
+      </span>
+    </div>
+  </div>
 
-          <p className="text-sm mb-3" style={{ color: '#E8E8E8' }}>
-           <b> Accessible and Appealing Visualizations: </b> <br /> "I am an alumni who works in data and analytics and this was a great refresher on the basics and complexities of creating good reporting. <br />I wish a course like this had existed at the beginning of my career." 
-	</p>
-	<br /> 
-	<p className="text-sm mb-3" style={{ color: '#E8E8E8' }}>
-<b> Creating Accessible PivotTables, PivotCharts, and Dashboards in Excel: </b> <br /> “Heather Owens, was patient, and overall did a good job!”
-          </p>
-        </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+    <blockquote
+      className="text-sm leading-relaxed"
+      style={{ color: "#E8E8E8" }}
+    >
+      <p className="font-bold mb-3">
+        "I am an alumni who works in data and analytics and this was a great
+        refresher on the basics and complexities of creating good reporting. I
+        wish a course like this had existed at the beginning of my career."
+      </p>
+      <footer
+        style={{
+          color: "#FFD82B",
+          fontWeight: 500,
+        }}
+      >
+        — Accessible and Appealing Visualizations
+      </footer>
+    </blockquote>
 
+    <blockquote
+      className="text-sm leading-relaxed"
+      style={{ color: "#E8E8E8" }}
+    >
+      <p className="font-bold mb-3">
+        "Heather Owens was patient, and overall did a good job!"
+      </p>
+      <footer
+        style={{
+          color: "#FFD82B",
+          fontWeight: 500,
+        }}
+      >
+        — Creating Accessible PivotTables, PivotCharts, and Dashboards in Excel
+      </footer>
+    </blockquote>
+  </div>
+</div>
         </div>
       </div>
     </section>

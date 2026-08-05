@@ -65,9 +65,7 @@ export default function Stats() {
       style={{ backgroundColor: '#021BC3', position: 'relative', zIndex: 10 }}
     >
       <div className="max-w-6xl mx-auto w-full">
-        <div style={{ color: '#FFC200', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-          Part [01]
-        </div>
+
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>By the Numbers</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
 

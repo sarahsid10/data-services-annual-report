@@ -99,9 +99,7 @@ export default function Team() {
       style={{ backgroundColor: 'rgba(0, 30, 95, 0.5)', position: 'relative', zIndex: 10 }}
     >
       <div className="max-w-7xl mx-auto w-full" style={{ position: 'relative', zIndex: 60 }}>
-        <div style={{ color: '#FFC200', fontSize: '0.875rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-          Part [03]
-        </div>
+
         <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>The Team</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
 
@@ -118,7 +116,7 @@ export default function Team() {
               }}
             >
               <Image
-                src="/images/group_1.png"
+                src="/images/group_2.png"
                 alt="Data Services Team - Group Photo 1"
                 width={400}
                 height={300}
@@ -126,23 +124,6 @@ export default function Team() {
               />
             </div>
 
-            <div
-              ref={(el) => {
-                if (el) photosRef.current[1] = el
-              }}
-              className="rounded-2xl overflow-hidden"
-              style={{
-                border: '2px solid rgba(255, 216, 43, 0.3)',
-              }}
-            >
-              <Image
-                src="/images/group_2.png"
-                alt="Data Services Team - Group Photo 2"
-                width={400}
-                height={300}
-                className="w-full h-auto"
-              />
-            </div>
           </div>
 
           {/* Right Column - Team Member Cards */}
