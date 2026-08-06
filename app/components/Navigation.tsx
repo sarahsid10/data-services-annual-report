@@ -13,9 +13,8 @@ export default function Navigation() {
     { label: 'General Stats', href: '#stats' },
     { label: 'Services', href: '#workareas' },
     { label: 'Team', href: '#team' },
-    { label: 'Workshops', href: '#workshops' },
-    { label: 'Engagement', href: '#engagement' },
-    { label: 'URRR', href: '#urrr' },
+    { label: 'Detailed Stats', href: '#workshops' },
+
     { label: 'Team Activities', href: '#teamactivity' },
     { label: 'Future', href: '#future' },
   ]
