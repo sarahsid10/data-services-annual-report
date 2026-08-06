@@ -53,8 +53,8 @@ export default function WorldHeatMap() {
     const pct = value / max
 
     if (pct > 0.5) return '#FFD82B'
-    if (pct > 0.25) return '#4ECDC4'
-    if (pct > 0.1) return '#95E1D3'
+    if (pct > 0.07) return '#4ECDC4'
+    if (pct > 0.05) return '#95E1D3'
     if (pct > 0.03) return '#66A2FF'
     if (pct > 0.01) return '#3B6FB6'
 
