@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import data from '../utils/data.json'
+import WorldHeatMap from "../components/WorldHeatMap"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -22,9 +23,9 @@ export default function URRR() {
           
           let dep = 0
           const timer1 = setInterval(() => {
-            dep += 11
-            if (dep >= 643) {
-              setCounts(prev => ({ ...prev, deposits: 643 }))
+            dep += 16
+            if (dep >= 528) {
+              setCounts(prev => ({ ...prev, deposits: 528 }))
               clearInterval(timer1)
             } else {
               setCounts(prev => ({ ...prev, deposits: dep }))
@@ -33,9 +34,9 @@ export default function URRR() {
 
           let depo = 0
           const timer2 = setInterval(() => {
-            depo += 1
-            if (depo >= 58) {
-              setCounts(prev => ({ ...prev, depositors: 58 }))
+            depo += 3
+            if (depo >= 76) {
+              setCounts(prev => ({ ...prev, depositors: 76 }))
               clearInterval(timer2)
             } else {
               setCounts(prev => ({ ...prev, depositors: depo }))
@@ -44,9 +45,9 @@ export default function URRR() {
 
           let v = 0
           const timer3 = setInterval(() => {
-            v += 1000
-            if (v >= 58709) {
-              setCounts(prev => ({ ...prev, views: 58709 }))
+            v += 3500
+            if (v >= 116907) {
+              setCounts(prev => ({ ...prev, views: 116907 }))
               clearInterval(timer3)
             } else {
               setCounts(prev => ({ ...prev, views: v }))
@@ -55,9 +56,9 @@ export default function URRR() {
 
           let d = 0
           const timer4 = setInterval(() => {
-            d += 400
-            if (d >= 21865) {
-              setCounts(prev => ({ ...prev, downloads: 21865 }))
+            d += 1500
+            if (d >= 55196) {
+              setCounts(prev => ({ ...prev, downloads: 55196 }))
               clearInterval(timer4)
             } else {
               setCounts(prev => ({ ...prev, downloads: d }))
@@ -70,7 +71,7 @@ export default function URRR() {
     return () => trigger.kill()
   }, [animated])
 
-  const maxViewCount = Math.max(...data.urrr.views_by_type.map(item => item.count))
+  const maxUploadCount = Math.max(...data.urrr.uploads_by_type.map(item => item.count))
 
   return (
     <section 
@@ -146,11 +147,11 @@ export default function URRR() {
             }}
           >
             <h3 className="text-xl font-bold mb-6 text-center" style={{ color: '#FFD82B' }}>
-              Views by Item Type
+              Uploads by Item Type
             </h3>
 
             <div className="space-y-3">
-              {data.urrr.views_by_type.map((item, i) => (
+              {data.urrr.uploads_by_type.map((item, i) => (
                 <div key={i}>
                   <div className="flex justify-between items-center mb-1">
                     <span style={{ color: '#B7D3FF', fontSize: '0.75rem' }}>{item.type}</span>
@@ -162,7 +163,7 @@ export default function URRR() {
                     <div 
                       className="transition-all duration-1000"
                       style={{
-                        width: animated ? `${(item.count / maxViewCount) * 100}%` : '0%',
+                        width: animated ? `${(item.count / maxUploadCount) * 100}%` : '0%',
                         height: '100%',
                         background: 'linear-gradient(90deg, #5FC3C3, #4A9D9D)',
                         borderRadius: '4px'
@@ -181,46 +182,22 @@ export default function URRR() {
               border: '2px solid rgba(255, 216, 43, 0.3)'
             }}
           >
-            <h3 className="text-xl font-bold mb-6 text-center" style={{ color: '#FFD82B' }}>
-              Uploads by Item Type
-            </h3>
 
-            <div className="flex items-center justify-center mb-6">
-              <svg width="200" height="200" viewBox="0 0 200 200">
-                {data.urrr.uploads_by_type.map((item, i) => {
-                  const prevPercentages = data.urrr.uploads_by_type.slice(0, i).reduce((sum, it) => sum + it.percentage, 0)
-                  return (
-                    <circle 
-                      key={i}
-                      cx="100" 
-                      cy="100" 
-                      r="70" 
-                      fill="none" 
-                      stroke={item.color} 
-                      strokeWidth="40" 
-                      strokeDasharray={`${item.percentage * 4.4} 440`} 
-                      strokeDashoffset={`-${prevPercentages * 4.4}`} 
-                      transform="rotate(-90 100 100)" 
-                    />
-                  )
-                })}
-                <circle cx="100" cy="100" r="40" fill="#001E5F" />
-              </svg>
-            </div>
 
-            <div className="grid grid-cols-2 gap-x-2 gap-y-1 text-xs">
-              {data.urrr.uploads_by_type.slice(0, 10).map((item, i) => (
-                <div key={i} className="flex items-center gap-1.5">
-                  <div style={{ width: '8px', height: '8px', borderRadius: '2px', backgroundColor: item.color, flexShrink: 0 }}></div>
-                  <span style={{ color: '#E8E8E8', fontSize: '0.65rem' }}>{item.type}</span>
-                  <span style={{ color: '#FFD82B', fontWeight: 'bold', fontSize: '0.65rem', marginLeft: 'auto' }}>
-                    {item.percentage}%
-                  </span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
+        <div
+  className="mt-16 rounded-2xl p-12"
+  style={{
+    background: "linear-gradient(135deg, #001E5F, #003EFF)",
+  }}
+>
+              <h3 className="text-xl font-bold mb-6 text-center" style={{ color: '#FFD82B' }}>
+              Views From Around the World
+            </h3>
+            <WorldHeatMap/>
+
+</div>
       </div>
     </section>
   )
