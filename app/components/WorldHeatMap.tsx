@@ -171,11 +171,12 @@ export default function WorldHeatMap() {
           alignItems: 'center',
           gap: 10,
           flexWrap: 'wrap',
-          marginTop: 20,
+          marginTop: 1,
           color: '#B7D3FF',
           fontSize: 14,
         }}
       >
+        <span style={{ color: '#66A2FF' }}>Number of users: </span>
         <span>212</span>
 
         <div style={{ width: 24, height: 12, background: '#234A8C', borderRadius: 2 }} />
