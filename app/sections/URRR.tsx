@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import data from '../utils/data.json'
 import WorldHeatMap from "../components/WorldHeatMap"
+import { Files } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -182,6 +183,49 @@ export default function URRR() {
               border: '2px solid rgba(255, 216, 43, 0.3)'
             }}
           >
+          
+            <h3 className="text-xl font-bold mb-6 text-center flex items-center justify-center gap-2"  style={{ color: '#FFD82B' }}>
+                New Collections 
+             </h3>
+             <div className="text-center text-sm mb-2" style={{ color: '#66A2FF' }}>
+              Click on the links to some of the latest contributions to the repository<br /> <br />
+              </div>
+             <div className="text-lg flex mb-4 max-w-3xl mx-auto" style={{ color: '#B7D3FF' }}>
+               <Files className="w-8 h-8" style={{ color: "#FFD82B" }} />
+                <a href="https://doi.org/10.60593/ur.d.c.8261959"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-[#B7D3FF] underline underline-offset-4"> 
+                  Summer High School Research Program @ LLE Collection </a>
+               </div>
+               <div className="text-sm mb-6" style={{ color: '#66A2FF' }}>
+               Project reports from the Laboratory for Laser Energetics (LLE) Summer High School Research Program, dating back to 2000.
+               </div>
+
+              <div className="text-lg flex mb-6 max-w-3xl mx-auto" style={{ color: '#B7D3FF' }}>
+               <Files className="w-8 h-8" style={{ color: "#FFD82B" }} />
+                <a href="https://doi.org/10.60593/ur.d.c.8439177"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-[#B7D3FF] underline underline-offset-4">                
+                Breaking Boundaries with Video Games Collection </a>
+              </div>
+               <div className="text-sm mb-6" style={{ color: '#66A2FF' }}>
+               Annual showcase of undergraduate research, writing, design, and multimodal scholarship involving video games at the University of Rochester.
+              </div>
+              
+              <div className="text-lg flex mb-6 max-w-3xl mx-auto" style={{ color: '#B7D3FF' }}>
+               <Files className="w-8 h-8" style={{ color: "#FFD82B" }} />
+                <a href="https://doi.org/10.60593/ur.d.c.8328110"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-[#B7D3FF] underline underline-offset-4"> 
+                NSF AR/VR Student Projects Collection </a>
+              </div>
+              <div className="text-sm mb-6" style={{ color: '#66A2FF' }}>
+               Final projects for an NSF funded program to offer training opportunities for students to apply extended reality technologies to their research across a variety of fields.
+              </div>
+      
 
 
           </div>
@@ -195,6 +239,9 @@ export default function URRR() {
               <h3 className="text-xl font-bold mb-6 text-center" style={{ color: '#FFD82B' }}>
               Views From Around the World
             </h3>
+              <div className="text-sm text-center " style={{ color: '#66A2FF' }}>
+               This past year, users from 23 countries viewed the content in URRR
+              </div>
             <WorldHeatMap/>
 
 </div>
