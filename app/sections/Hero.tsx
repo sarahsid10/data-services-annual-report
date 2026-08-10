@@ -66,7 +66,7 @@ export default function Hero() {
 
       </div>
 
-      <div className="absolute bottom-20 text-center" style={{ zIndex: 60 }}>
+      <div className="text-center" style={{ zIndex: 60 }}>
         <p className="text-lg mb-2" style={{ color: '#FFC200' }}>2025 - 2026</p>
         <p className="text-lg mb-2" style={{ color: '#E8E8E8' }}>University of Rochester Libraries <br /></p>
         
