@@ -44,7 +44,7 @@ export default function Engagement() {
       style={{ backgroundColor: '#021BC3', position: 'relative', zIndex: 10 }}
     >
       <div className="max-w-6xl mx-auto w-full">
-        <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
+        <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 3rem)' }}>
           Engagement Highlights
         </h2>
         

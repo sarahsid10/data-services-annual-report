@@ -37,7 +37,7 @@ export default function Hero() {
           style={{ 
             fontFamily: 'Georgia, serif',
             letterSpacing: '-0.009em',
-            fontSize: 'clamp(3rem, 7vw, 6rem)',
+            fontSize: 'clamp(6rem, 7vw, 14rem)',
             color: '#FFD82B',
             lineHeight: 0.85,
             marginBottom: '3rem',
@@ -51,7 +51,7 @@ export default function Hero() {
           style={{ 
             fontFamily: 'Georgia, serif',
             letterSpacing: '-0.02em',
-            fontSize: 'clamp(6rem, 15vw, 14rem)',
+            fontSize: 'clamp(6rem, 15vw, 14rem)', 
             color: '#FFD82B',
             lineHeight: 0.85,
             marginBottom: '3rem',

@@ -81,7 +81,7 @@ export default function URRR() {
       style={{ backgroundColor: 'rgba(0, 30, 95, 0.5)', position: 'relative', zIndex: 10 }}
     >
       <div className="max-w-6xl mx-auto w-full" style={{ position: 'relative', zIndex: 60 }}>
-        <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
+        <h2 className="font-serif font-bold mb-8 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 3rem)' }}>
           URRR
         </h2>
         
@@ -240,7 +240,7 @@ export default function URRR() {
               Views From Around the World
             </h3>
               <div className="text-sm text-center " style={{ color: '#66A2FF' }}>
-               This past year, users from 23 countries viewed the content in URRR
+               This past year, users from more than 20 countries viewed the content in URRR (note: Singapore is too small to view).
               </div>
             <WorldHeatMap/>
 

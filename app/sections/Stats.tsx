@@ -66,7 +66,7 @@ export default function Stats() {
     >
       <div className="max-w-6xl mx-auto w-full">
 
-        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>General Stats</h2>
+        <h2 className="font-serif font-bold mb-4" style={{ color: '#FFD82B' }}>Overview</h2>
         <div style={{ width: '80px', height: '4px', background: 'linear-gradient(90deg, #FFD82B, #FFC200)', marginBottom: '3rem' }} />
         
         
@@ -134,7 +134,7 @@ export default function Stats() {
     
 {/* Partnership Network */}
 <div className="mt-24">
-  <h3 className="font-serif font-bold mb-6 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 4rem)' }} >
+  <h3 className="font-serif font-bold mb-6 text-center" style={{ color: '#FFD82B', fontSize: 'clamp(2.5rem, 5vw, 3rem)' }} >
     Partnerships
   </h3>
       <p className="text-center text-lg" style={{ color: '#B7D3FF' }}>
