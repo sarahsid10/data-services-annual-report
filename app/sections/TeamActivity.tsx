@@ -111,7 +111,7 @@ const activities: Activity[] = [
       {
         title:
           'RDAP 2026: RDAP Digitally Accessible Data and Data Repositories Working Group Report.',
-        detail: 'Heather Charlotte Owen, Christine Nieman Hislop.',
+        detail: 'Heather Charlotte Owen, Christine Nieman Hislop',
         url: 'https://rdapassociation.org/summit/schedule',
       },
       {
