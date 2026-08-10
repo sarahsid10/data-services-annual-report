@@ -5,6 +5,7 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  
 } from 'react-simple-maps'
 
 import data from '../utils/data.json'
@@ -132,6 +133,8 @@ export default function WorldHeatMap() {
             })
           }
         </Geographies>
+      
+
       </ComposableMap>
 
       {tooltip.visible && (
