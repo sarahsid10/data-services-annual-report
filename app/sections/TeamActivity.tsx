@@ -83,7 +83,7 @@ const activities: Activity[] = [
       {
         title:
           'Accessibility for Data and Data Repositories: Understanding and Applying the 2024 ADA Title II Rule.',
-        detail: 'Emily Blumenthal… Heather Charlotte Owen',
+        detail: 'Emily Blumenthal, Lena Bohman, Carrie Breton,… Heather Charlotte Owen',
         url: 'https://doi.org/10.31274/isudp.rdap.300',
       },
       {
@@ -287,7 +287,7 @@ export default function Team() {
           className="font-serif font-bold mb-4"
           style={{ color: '#FFD82B' }}
         >
-          Team Activity
+          Team Activities
         </h2>
 
         <div

@@ -90,27 +90,28 @@ export default function Introduction() {
           
           <div className="space-y-6" style={{ color: '#E8E8E8' }}>
             <p className="text-xl font-serif italic text-center" style={{ lineHeight: '1.8', color: '#FFE95F' }}>
-              "This year has been an exciting period of growth and collaboration for the Data Services team. I am especially proud of how the team has come together over the past year, embracing new opportunities to support researchers across the University of Rochester and advancing the One University vision."
+              "This year has been an exciting period of growth and collaboration for the Data Services team. I am especially proud of how the team has embraced new opportunities to support researchers across the University of Rochester and advance the One University vision."
             </p>
             
             <p className="text-lg text-left" style={{ lineHeight: '1.7' }}>
-              A key milestone was welcoming Rachel Becker from the Edward G. Miner Libraries to the team. Rachel’s expertise positions us to better identify and support the needs of researchers at the medical campus, ensuring that our services are aligned with the university’s broader mission. 
+              A key milestone was welcoming Rachel Becker from the Edward G. Miner Libraries. Rachel’s expertise enhances our ability to support researchers at the medical campus, aligning our services with the university’s mission. 
             </p>
             
             <p className="text-lg text-left" style={{ lineHeight: '1.7' }}>
-              I am also proud of the continued growth of our student employees, who play a vital role in expanding our services and outreach. Tejaswini Balamurugan Kanimozhi, Nayoon (Kate) Kim, and Aabha Pandit have bolstered our programming by teaching workshops and actively promoting the UR Libraries Data Services team. This year, we began expanding experiential learning opportunities for our students by collaborating with colleagues across the library to support data-driven projects. Kate is working on a project to clean, analyze, and visualize data from our interlibrary loan service. These projects enhance internal decision-making at the library and provide our students with valuable experience to prepare them for their future studies and careers.
+              Our student employees—Tejaswini Balamurugan Kanimozhi, Nayoon (Kate) Kim, and Aabha Pandit—have been instrumental in expanding our programming by teaching workshops and promoting Data Services.
+              This year, we expanded experiential learning opportunities by collaborating with colleagues across the library on data-driven projects. For example, Kate is working on a project to clean and visualize interlibrary loan data, which supports library decision-making and prepares students for future careers.
             </p>
             
             <p className="text-lg text-left" style={{ lineHeight: '1.7' }}>
-             Our team has strengthened collaborations across the university to amplify our impact. We partnered with the Office of Research and Project Administration (ORPA) to share training opportunities and introduce the NIH Data Management and Sharing template, guiding researchers through data-sharing mandates. Collaborations with Sonya Hadrigan, the inaugural Associate Vice President for Research Integrity, and the Office of Research Integrity, Stewardship & Ethics (ORISE) have advanced initiatives promoting responsible research practices.  
+             We strengthened collaborations across the university, partnering with Office of Research and Project Administration (ORPA) to introduce the NIH Data Management and Sharing template and working with Office of Research Integrity, Stewardship & Ethics (ORISE) and the university’s the inaugural Associate Vice President for Research Integrity, Sonya Hadrigan to promote responsible research practices.  
             </p>
 	    
             <p className="text-lg text-left" style={{ lineHeight: '1.7' }}>
-             Looking ahead, we are particularly excited to continue expanding our collaborations. We plan to work with the Scholarly Communications department to support ORISE’s Fall 2026 and Spring 2027 Responsible and Ethical Conduct of Research (RECR) training program. Additionally, we will finalize a data management and sharing template for the National Science Foundation, providing valuable guidance for the university’s second-largest research funder after the NIH. Finally, we aim to identify additional technical projects that support the library’s operations while creating experiential learning opportunities for our student colleagues.  
+             Looking ahead, we plan to support ORISE’s Responsible and Ethical Conduct of Research training, finalize an National Science Foundation data management template, and expand technical projects that benefit the library and our students.  
             </p>
 
             <p className="text-lg text-center font-semibold" style={{ lineHeight: '1.7', color: '#B7D3FF' }}>
-             As we move forward, I am confident that the Data Services team will continue to embody the spirit of Meliora—striving to be ever better in supporting the university’s research community.  
+             The Data Services team remains committed to embodying the spirit of Meliora—striving to be ever better.  
             </p>
           </div>
 

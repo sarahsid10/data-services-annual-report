@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Globe, GraduationCap, Search, Building2, Handshake } from 'lucide-react'
+import { Globe, GraduationCap, Search, Building2, Handshake, BookType } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -15,15 +15,27 @@ const initiatives = [
     color: '#FFD82B',
   },
   {
+    icon: BookType,
+    title: 'Qualitative Research',
+    description: 'Through workshops and instruction, expand support for various qualitative research tools.',
+    color: '#FFE95F',
+  },
+  {
     icon: GraduationCap,
     title: 'Student Opportunities',
     description: 'Continued support for student employment and internships focused on data support projects.',
     color: '#FFC200',
   },
   {
-    icon: Search,
-    title: 'Environmental Scan',
-    description: 'Comprehensive library-wide scan of uncataloged or hidden data collections.',
+    icon: Handshake,
+    title: 'Campus Collaborators',
+    description: 'Continued support for student employment and internships focused on data support projects.',
+    color: '#FFC200',
+  },
+  {
+    icon: Building2,
+    title: 'Expand Funder Support',
+    description: 'Keep up with the changes in funder policies and expand support for related Data Management and Sharing Plans.',
     color: '#FFE95F',
   }
 ]
@@ -65,40 +77,102 @@ export default function Future() {
           Looking ahead to new initiatives, projects, and services that will further strengthen our impact
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {initiatives.map((initiative, index) => {
-            const Icon = initiative.icon
-            return (
-              <div
-                key={index}
-                ref={(el) => {
-                  if (el) cardsRef.current[index] = el
-                }}
-                className="rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2"
-                style={{
-                  backgroundColor: '#003EFF',
-                  border: '2px solid rgba(255, 216, 43, 0.4)',
-                  boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)'
-                }}
-              >
-                <div
-                  className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center"
-                  style={{ 
-                    background: `linear-gradient(135deg, ${initiative.color}, ${initiative.color}dd)`,
-                  }}
-                >
-                  <Icon className="w-7 h-7" style={{ color: '#001E5F' }} />
-                </div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: '#FFD82B' }}>
-                  {initiative.title}
-                </h3>
-                <p className="text-base leading-relaxed" style={{ color: '#E8E8E8' }}>
-                  {initiative.description}
-                </p>
-              </div>
-            )
-          })}
+ {/* Top three cards */}
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {initiatives.slice(0, 3).map((initiative, index) => {
+    const Icon = initiative.icon
+
+    return (
+      <div
+        key={index}
+        ref={(el) => {
+          if (el) cardsRef.current[index] = el
+        }}
+        className="rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2"
+        style={{
+          backgroundColor: '#003EFF',
+          border: '2px solid rgba(255, 216, 43, 0.4)',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
+        }}
+      >
+        <div
+          className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center"
+          style={{
+            background: `linear-gradient(135deg, ${initiative.color}, ${initiative.color}dd)`,
+          }}
+        >
+          <Icon
+            className="w-7 h-7"
+            style={{ color: '#001E5F' }}
+          />
         </div>
+
+        <h3
+          className="text-xl font-bold mb-3"
+          style={{ color: '#FFD82B' }}
+        >
+          {initiative.title}
+        </h3>
+
+        <p
+          className="text-base leading-relaxed"
+          style={{ color: '#E8E8E8' }}
+        >
+          {initiative.description}
+        </p>
+      </div>
+    )
+  })}
+</div>
+
+{/* Bottom two cards */}
+<div className="flex flex-col md:flex-row justify-center gap-6 mt-6">
+  {initiatives.slice(3).map((initiative, index) => {
+    const actualIndex = index + 3
+    const Icon = initiative.icon
+
+    return (
+      <div
+        key={actualIndex}
+        ref={(el) => {
+          if (el) cardsRef.current[actualIndex] = el
+        }}
+        className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2"
+        style={{
+          backgroundColor: '#003EFF',
+          border: '2px solid rgba(255, 216, 43, 0.4)',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
+        }}
+      >
+        <div
+          className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center"
+          style={{
+            background: `linear-gradient(135deg, ${initiative.color}, ${initiative.color}dd)`,
+          }}
+        >
+          <Icon
+            className="w-7 h-7"
+            style={{ color: '#001E5F' }}
+          />
+        </div>
+
+        <h3
+          className="text-xl font-bold mb-3"
+          style={{ color: '#FFD82B' }}
+        >
+          {initiative.title}
+        </h3>
+
+        <p
+          className="text-base leading-relaxed"
+          style={{ color: '#E8E8E8' }}
+        >
+          {initiative.description}
+        </p>
+      </div>
+    )
+  })}
+</div>
 
         <div 
           className="mt-16 rounded-2xl p-12 text-center"

@@ -181,7 +181,7 @@ export default function Stats() {
           className="mt-3 text-sm"
           style={{ color: "#E8E8E8" }}
         >
-          14 Partners
+          16 Partners
         </div>
       </div>
 
@@ -241,7 +241,7 @@ export default function Stats() {
         <div
           className="text-6xl font-black text-white"
         >
-          2
+          4
         </div>
 
         <p
@@ -250,7 +250,8 @@ export default function Stats() {
         >
           University partners
         </p>
-         <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}> CIRC (Center for Integrated Research Computing) and ORISE (Office of Research Integrity, Stewarship & Ethics)</p>
+         <p style={{ color: '#B7D3FF', fontSize: '1rem', lineHeight: '1.6' }}> CIRC (Center for Integrated Research Computing), OVPR/ORISE (Office of Research Integrity, Stewarship & Ethics), 
+          CART (Center for Advanced Research Technologies), and ORIT (Office of Research IT)</p>
       </div>
     </div>
 
