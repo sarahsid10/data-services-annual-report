@@ -10,10 +10,10 @@ export default function Navigation() {
   const links = [
     { label: 'Home', href: '#hero' },
     { label: 'Introduction', href: '#introduction' },
-    { label: 'General Stats', href: '#stats' },
+    { label: 'Overview', href: '#stats' },
     { label: 'Services', href: '#workareas' },
     { label: 'Team', href: '#team' },
-    { label: 'Detailed Stats', href: '#workshops' },
+    { label: 'By the Numbers', href: '#workshops' },
 
     { label: 'Team Activities', href: '#teamactivity' },
     { label: 'Future', href: '#future' },
