@@ -1,0 +1,143 @@
+{
+  "team_members": [
+    {
+      "name": "Rachel Becker",
+      "title": "Senior Librarian, Health Science",
+      "bird": "Black-capped Chickadee",
+      "description": "Health Sciences Librarian helping further support the needs of researchers at the medical center.",
+      "traits": "Collects knowledge for dispersal and (usually) remembers where it went."
+    },
+    {
+      "name": "Heather Owen",
+      "title": "Data Librarian",
+      "bird": "Great Gray Owl",
+      "description": "Data Librarian who reviews data management plans, consults on best practices, and leads data literacy initiatives.",
+      "traits": "Flies thoughtfully and silently and is very wise"
+    },
+    {
+      "name": "Sarah Siddiqui",
+      "title": "Reproducibility Librarian",
+      "bird": "Merlin (Petit caporal)",
+      "description": "Reproducibility Librarian who recommends tools and best practices for analyzing and sharing methods, workflows, and code.",
+      "traits": "Compact, judicious, and level-headed"
+    },
+    {
+      "name": "Matthew Mariner",
+      "title": "Data Curator Librarian",
+      "bird": "Anhinga",
+      "description": "Data Curator Librarian managing URRR, ensuring thorough curation of all submitted data.",
+      "traits": "Rather awkward on land, but flies gracefully through water"
+    },
+    {
+      "name": "Daniel Castillo",
+      "title": "Somerville Director",
+      "bird": "Columbian Hummingbird",
+      "description": "Director of Science & Engineering Libraries and Research Initiatives, leading the Data Services team.",
+      "traits": "Busy and quick-moving"
+    }
+  ],
+  "workshops": {
+    "data_bloom": {
+      "registered": 487,
+      "attended": 228,
+      "rating": 9.3,
+      "events": 11
+    },
+    "love_data": {
+      "registered": 255,
+      "attended": 172,
+      "rating": 8.7,
+      "events": 8
+    },
+    "data_skills": {
+      "registered": 304,
+      "attended": 164,
+      "rating": 8.8,
+      "events": 5
+    }
+  },
+  "engagement": {
+    "total": 350,
+    "busiest_month": "April 2026",
+    "busiest_count": 51,
+    "top_topic": "Data Workshop",
+    "top_topic_count": 50,
+    "top_funder": "NIH",
+    "top_funder_count": 44,
+    "by_campus": [
+      { "name": "River Campus", "count": 178, "color": "#FFD82B", "percentage": 50.9  },
+      { "name": "Medical Center", "count": 118, "color": "#FF6B9D", "percentage": 33.7 },
+      { "name": "Public Community", "count": 30, "color": "#4ECDC4", "percentage": 8.5 },
+      { "name": "Other", "count": 14, "color": "#95E1D3", "percentage": 4 },
+      { "name": "UR Other", "count": 8, "color": "#BEBEBE", "percentage": 2.3 },
+      { "name": "Eastman", "count": 2, "color": "#B7D3FF", "percentage": 0.6 }
+    ],
+    "by_user_type": [
+      { "type": "Faculty/Researcher", "count": 139, "color": "#8B4513", "percentage": 39.7 },
+      { "type": "Staff", "count": 91, "color": "#A9A9A9", "percentage": 26 },
+      { "type": "Grad", "count": 55, "color": "#FF8C42", "percentage": 15.7 },
+      { "type": "Community", "count": 33, "color": "#90EE90", "percentage": 9.4 },
+      { "type": "Undergrad", "count": 27, "color": "#D2691E", "percentage": 7.7 },
+      { "type": "Postdoctoral", "count": 2, "color": "#98FB98", "percentage": 0.5 },
+      { "type": "Other", "count": 2, "color": "#696969", "percentage": 0.5 },
+      { "type": "Alumni", "count": 1, "color": "#FFFF00", "percentage": 0.3 }
+    ],
+    "by_topic": [
+      { "topic": "Data workshop/service", "count": 50 },
+      { "topic": "Data curation", "count": 40 },
+      { "topic": "URRR", "count": 28 },
+      { "topic": "General", "count": 24 },
+      { "topic": "DMSP Review", "count": 22 },
+      { "topic": "Reproducibility", "count": 18 },
+      { "topic": "Finding/ Accessing Data", "count": 18 },
+      { "topic": "LabArchives", "count": 16  },
+      { "topic": "Data viz", "count": 16 },
+      { "topic": "protocols.io", "count": 15 }
+    ]
+  },
+  "urrr": {
+    "deposits": 528,
+    "depositors": 76,
+    "views": 112419,
+    "downloads": 55196,
+    "most_upload_type": "Reports",
+    "most_upload_count": 309,
+    "uploads_by_type": [
+      { "type": "report", "count": 309 },
+      { "type": "dataset", "count": 79 },
+      { "type": "presentation", "count": 61 },
+      { "type": "software", "count": 19 },
+      { "type": "poster", "count": 15 },
+      { "type": "figure", "count": 12 },
+      { "type": "other (media, DMP, online resource, conference, standard, registration)", "count": 10 },
+      { "type": "educational resource", "count": 9 },
+      { "type": "book", "count": 7 },
+      { "type": "journal contribution", "count": 7 }
+    ],
+     "country_views": [
+      {"country": "United States of America", "count": 81271},
+      {"country": "Brazil", "count": 5422},
+      {"country": "China", "count": 6533},
+      {"country": "Vietnam", "count": 3062},
+      {"country": "Singapore", "count": 3019},
+      {"country": "India", "count": 1933},
+      {"country": "Germany", "count": 1738},
+      {"country": "Ireland", "count": 1467},
+      {"country": "United Kingdom", "count": 1434},
+      {"country": "France", "count": 1000},
+      {"country": "Australia", "count": 946},
+      {"country": "Ukraine", "count": 901},
+      {"country": "Canada", "count": 707},
+      {"country": "Argentina", "count": 549},
+      {"country": "Japan", "count": 474},
+      {"country": "Netherlands", "count": 353},
+      {"country": "Mexico", "count": 350},
+      {"country": "Indonesia", "count": 310},
+      {"country": "Poland", "count": 265},
+      {"country": "Ecuador", "count": 242},
+      {"country": "Pakistan", "count": 231},
+      {"country": "Bangladesh", "count": 212}
+     ]
+
+  }
+}
